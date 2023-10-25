@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Min Side</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const burgerMenu = document.getElementById('burger-menu');
+            const menu = document.getElementById('menu');
+        
+            burgerMenu.addEventListener('click', function() {
+                burgerMenu.classList.toggle('active');
+                menu.classList.toggle('active');
+            });
+        });
+        </script>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="header-content">
+        <img src="Logo.png" alt="Bitcoin Logo" class="header-logo">
+        <h1>bitcoinINFO</h1>
+    </div>
+    <div class="burger-menu" id="burger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="menu" id="menu">
+        <a href="#intro" class="header-button">bitcoin</a>
+        <a href="#section1" class="header-button">information</a>
+        <a href="#section2" class="header-button">video</a>
+        <a href="#section3" class="header-button">kontakt</a>
+    </div>
+</header>
+
+
+    <!-- Container til centreret indhold -->
+    <div class="centered-content">
+
+        <!-- Div mellem header og section 1 -->
+        <div class="intro-div" id="intro">
+            <p>På overfladen kan bitcoin lyde simplet: Det er en valuta
+                <br>som er skabt på internettet, der kan bruges til at købe varer.....???
+            </p>
+            <a href="#section1" class="scroll-button">Vil du vide mere?</a>
+        </div>
+
+        <!-- sektion 1 -->
+        <section class="centered-section"  id="section1">
+            <h2 class="title1">information om bitcoin</h2>
+            <hr>
+            <p>We are working with both individuals and businesses from all over the globe 
+                <br>to create awesome websites and applications.
+            </p>
+            <div class="info-text-image">
+                
+                <p class="info-text"><strong>Bitcoin: Fremtiden for Penge</strong>
+                    <br>Bitcoin er en revolutionerende digital valuta, der har ændret måden, vi tænker på økonomi, finansiering og teknologi. Den blev oprettet i 2009 af en person eller en gruppe mennesker, der gik under pseudonymet Satoshi Nakamoto, og siden da har den været genstand for intens interesse, debat og spekulation.
+
+                    I sidste ende er Bitcoin mere end bare en valuta; det er et eksperiment i økonomisk frihed, decentralisering og teknologisk innovation. Dets fremtid er stadig usikker, men dens indflydelse på vores verden er allerede betydelig, og det er en udvikling, der fortjener nøje opmærksomhed. Bitcoin har potentiale til at ændre måden, vi tænker på økonomi og finansiering, og det vil fortsat være en kilde til fascination og forskning i årene fremover.</p>
+                <img src="Bitcoin image 1.png" alt="Bitcoins billede" class="info-image">
+            </div>
+            <div class="image-info-text">
+                <img src="Bitcoin image 1.png" alt="Bitcoins billede" class="info-image">
+                <p class="info-text"><strong>De Mystiske Oprindelser og Magien Bag Bitcoin</strong>
+                    <br>Bitcoin er en revolutionerende digital valuta, der har ændret måden, vi tænker på økonomi, finansiering og teknologi. Den blev oprettet i 2009 af en person eller en gruppe mennesker, der gik under pseudonymet Satoshi Nakamoto, og siden da har den været genstand for intens interesse, debat og spekulation.
+
+                    I sidste ende er Bitcoin mere end bare en valuta; det er et eksperiment i økonomisk frihed, decentralisering og teknologisk innovation. Dets fremtid er stadig usikker, men dens indflydelse på vores verden er allerede betydelig, og det er en udvikling, der fortjener nøje opmærksomhed. Bitcoin har potentiale til at ændre måden, vi tænker på økonomi og finansiering, og det vil fortsat være en kilde til fascination og forskning i årene fremover.</p>
+            </div>
+        </section>
+        
+        <!-- sektion 2 -->
+        <section class="centered-section" id="section2">
+            <h2 class="title2">Video af Jack Ma omkring Bitcoins</h2>
+            <hr>
+            <div class="video-container">
+                <iframe width="1272" height="670" src="bitcoinJackMa.mp4" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <!-- sektion 3 -->
+        <section class="centered-section" id="section3">
+            <h2 class="title3">Send os en mail</h2>
+            <hr>
+            <div class="contact-form">
+                <div class="contact-info">
+                    <div class="input-group">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Din navn:" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Din email:" required>
+                    </div>
+                </div>
+                <label for="message"></label>
+                <textarea id="message" name="message" rows="10" placeholder="Skriv en besked:" required></textarea><br>
+                <input type="submit" value="Send beskeden">
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link" id="facebook">Facebook</a>
+            <a href="#" class="social-link" id="twitter">Twitter</a>
+            <a href="#" class="social-link" id="google-plus">Google+</a>
+            <a href="#" class="social-link" id="linkedin">LinkedIn</a>
+            <a href="#" class="social-link" id="behance">Behance</a>
+            <a href="#" class="social-link" id="dribbble">Dribbble</a>
+            <a href="#" class="social-link" id="github">GitHub</a>
+        </div>
+    </footer>
+</body>
+</html>
